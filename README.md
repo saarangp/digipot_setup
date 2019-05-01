@@ -18,7 +18,7 @@ To get started, clone this repo: In terminal, run `git clone https://github.com/
 Then, cd into the repo.
 
 #### Dependencies
-Make sure you have pip installed on your machine. You can check by running `which pip` in your terminal. If you don't install it [here](https://pip.pypa.io/en/stable/installing/)
+Make sure you have pip installed on your machine. You can check by running `which pip` in your terminal. If you don't have it, install it [here](https://pip.pypa.io/en/stable/installing/).
 
 Install dependencies by running `pip install -r requirements.txt` in your terminal. This will install all the python packages that you need.
 
