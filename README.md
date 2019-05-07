@@ -35,6 +35,7 @@ In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-r
 I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT IMAGE**
 
 The breadboard is powered by the 5V pin from the Arduino. 
+
 Number the pins of the digipot starting where 1 is on the top left, 8 is on the bottom left, and 9 is on the bottom right.
 
 Pins `5-8` are connected to ground. Pin `16` is connected to the 5V rail. Pin `13` is connected to ground. 
@@ -51,6 +52,14 @@ This is the Arduino code that communicates with the digipot and sends informatio
 
 #### Using the Jupyter Notebook to Acquire Data
 
+In your terminal, run `jupyter notebook` and it should open a window in  your browser. After this, simply open `readoscope_arduino.ipynb` and follow the directions below. 
+
+Prerequisites: 
+1) The Tx is correctly aligned and focused, maximizing the voltage harvest in the open condition. 
+2) The acquisition mode on the oscilloscope is set to "Averaging" with 512 averages. 
+3) Your laptop is plugged into _both_ the oscilliscope and the Arduino. 
+
+Run through the notebook (one cell at a time) to acquire the data. (You can run cells by pressing `shift + enter`). Be sure to read the comments in the cells before you run them. The workflow is as follows: acquire the waveform for the short condition, acquire the waveform for the open condition, and then acquire the waveform for all the conditions. The last step should take anywhere from 10-20 minutes to complete **TODO: Time this**. The reason it takes this long is because I added a delay to ensure that the oscilloscope has time (since we are performing averaging) to update itself. 
 ***
 
 ### Data Analysis
