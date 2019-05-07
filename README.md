@@ -67,6 +67,6 @@ Run through the notebook (one cell at a time) to acquire the data. (You can run 
 ### Data Analysis
 
 ### Troubleshooting
-**TO BE FILLED IN**
+**Coming Soon**
 
 In the meantime, email me at saarangp@berkeley.edu with any questions. 
