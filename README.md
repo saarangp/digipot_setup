@@ -6,17 +6,18 @@ by: Saarang Panchavati
 
 ### Motivation
 
-Measuring backscatter modulation in various load conditions is key to understanding the behavior 
+Accurately measuring backscatter modulation is key to understanding the behavior of neural dust PZTs under various load conditions. In the past, measuring modulation with discrete resistors proved to be effective in minimizing parasitics. However, manually swapping out resistors introduces lots of disturbance, and doesn't allow for fine load conditions to be measured. To ensure accurate measurements with minimal parasitics, I developed this digipot, arduino, and python workflow to rapidly and robustly acquire, and analyze data.  
 
 ### General Overview
 
+In this repo there is the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an indepth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
 
 
 ### Getting Started
 
 Make sure you have git installed on your computer. If not, [here](https://www.atlassian.com/git/tutorials/install-git) is a tutorial
 
-To get started, clone this repo: In terminal, run `git clone https://github.com/saarangp/digipot_setup/edit/master/README.md`
+To get started, clone this repo: In terminal, run `git clone https://github.com/saarangp/digipot_setup/`
 Then, cd into the repo.
 
 #### Dependencies
@@ -25,6 +26,8 @@ Make sure you have pip installed on your machine. You can check by running `whic
 Install dependencies by running `pip install -r requirements.txt` in your terminal. This will install all the python packages that you need.
 
 #### Setting Up the Arduino
+
+In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-rev3).
 
 ##### Connection to Digipot
 
