@@ -6,11 +6,11 @@ by: Saarang Panchavati
 
 ### Motivation
 
-Accurately measuring backscatter modulation is key to understanding the behavior of neural dust PZTs under various load conditions. In the past, measuring modulation with discrete resistors proved to be effective in minimizing parasitics. However, manually swapping out resistors introduces lots of disturbance, and doesn't allow for fine load conditions to be measured. To ensure accurate measurements with minimal parasitics, I developed this digipot, arduino, and python workflow to rapidly and robustly acquire, and analyze data.  
+Accurately measuring backscatter modulation is key to understanding the behavior of neural dust PZTs under various load conditions. In the past, measuring modulation with discrete resistors proved to be effective in minimizing parasitics. However, manually swapping out resistors introduces lots of disturbance, and doesn't allow for fine load conditions to be measured. To ensure accurate measurements with minimal parasitics, I developed this digipot, arduino, and python workflow to rapidly acquire and analyze data.  
 
 ### General Overview
 
-In this repo there are the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an indepth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
+In this repo there are the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an in depth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
 
 ***
 ### Getting Started
@@ -33,6 +33,8 @@ In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-r
 #### Connecting the Arduino to the Digipot
 
 I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT IMAGE**
+
+![alt text](https://github.com/saarangp/digipot_setup/blob/master/figures/IMG_3501.jpg "Logo Title Text 1")
 
 The breadboard is powered by the 5V pin from the Arduino. 
 
