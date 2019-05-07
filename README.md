@@ -12,7 +12,7 @@ Accurately measuring backscatter modulation is key to understanding the behavior
 
 In this repo there are the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an indepth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
 
-
+***
 ### Getting Started
 
 Make sure you have git installed on your computer. If not, [here](https://www.atlassian.com/git/tutorials/install-git) is a tutorial
@@ -25,6 +25,7 @@ Make sure you have pip installed on your machine. You can check by running `whic
 
 Install dependencies by running `pip install -r requirements.txt` in your terminal. This will install all the python packages that you need.
 
+***
 #### Setting Up the Arduino
 
 In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-rev3).
@@ -47,7 +48,7 @@ Finally, Pin `9` is connected to Analog input `A5` on the Arduino, and Pin `10` 
 Upload the file `digipot_python_control.ino` to the arduino.
 This is the Arduino code that communicates with the digipot and sends information to the python script. The Arduino only instructs the digipot to change resistance when the python code tells it to proceed. The Arduino then changes the resistance 1 "tick" (increase of ~150 ohms) and sends the new resistance to the python script. 
 
-
+***
 #### Using the Jupyter Notebook
 
 ### Analysis
