@@ -26,11 +26,11 @@ Make sure you have pip installed on your machine. You can check by running `whic
 Install dependencies by running `pip install -r requirements.txt` in your terminal. This will install all the python packages that you need.
 
 ***
-#### Setting Up the Arduino
+### Data Acquisition 
 
 In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-rev3).
 
-##### Connection to Digipot
+#### Connecting the Arduino to the Digipot
 
 I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT IMAGE**
 
@@ -43,15 +43,17 @@ Finally, Pin `9` is connected to Analog input `A5` on the Arduino, and Pin `10` 
 
 **TODO: Upload testing software to check if it is set up correctly**
 
-##### Software
+#### Software
 
 Upload the file `digipot_python_control.ino` to the arduino.
 This is the Arduino code that communicates with the digipot and sends information to the python script. The Arduino only instructs the digipot to change resistance when the python code tells it to proceed. The Arduino then changes the resistance 1 "tick" (increase of ~150 ohms) and sends the new resistance to the python script. 
 
-***
-#### Using the Jupyter Notebook
 
-### Analysis
+#### Using the Jupyter Notebook to Acquire Data
+
+***
+
+### Data Analysis
 
 ### Troubleshooting
 **TO BE FILLED IN**
