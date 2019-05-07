@@ -32,9 +32,9 @@ In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-r
 
 #### Connecting the Arduino to the Digipot
 
-I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT IMAGE**
+I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT BETTER IMAGE**
 
-![alt text](https://github.com/saarangp/digipot_setup/blob/master/figures/IMG_3501.jpg "Logo Title Text 1")
+<img src="https://github.com/saarangp/digipot_setup/blob/master/figures/IMG_3501.jpg" alt="drawing" width="500"/>
 
 The breadboard is powered by the 5V pin from the Arduino. 
 
