@@ -1,10 +1,12 @@
 # digipot_setup
 
 #### Git Repo for Digipot setup for backscatter analysis
-Saarang Panchavati
+by: Saarang Panchavati
 
 
 ### Motivation
+
+Measuring backscatter modulation in various load conditions is key to understanding the behavior 
 
 ### General Overview
 
