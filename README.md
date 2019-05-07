@@ -10,9 +10,9 @@ Accurately measuring backscatter modulation is key to understanding the behavior
 
 ### General Overview
 
-In this repo there is the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an indepth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
+In this repo there are the `.ino` file for the Arduino code, as well as jupyter notebooks for acquiring, and analyzing the data. This readme should give an indepth guide to using these tools to rapidly acquire load conditioned backscatter modulation. 
 
-
+***
 ### Getting Started
 
 Make sure you have git installed on your computer. If not, [here](https://www.atlassian.com/git/tutorials/install-git) is a tutorial
@@ -25,21 +25,35 @@ Make sure you have pip installed on your machine. You can check by running `whic
 
 Install dependencies by running `pip install -r requirements.txt` in your terminal. This will install all the python packages that you need.
 
-#### Setting Up the Arduino
+***
+### Data Acquisition 
 
 In this setup, I use an Arduino [Uno](https://store.arduino.cc/usa/arduino-uno-rev3).
 
-##### Connection to Digipot
+#### Connecting the Arduino to the Digipot
 
-##### Software
+I already set up the breadboard necessary to use the digipot with the Arduino (see image below). **TO DO: INSERT IMAGE**
+
+The breadboard is powered by the 5V pin from the Arduino. 
+Number the pins of the digipot starting where 1 is on the top left, 8 is on the bottom left, and 9 is on the bottom right.
+
+Pins `5-8` are connected to ground. Pin `16` is connected to the 5V rail. Pin `13` is connected to ground. 
+Pins `12` and `14` are connected to the electrodes of the PZT. 
+Finally, Pin `9` is connected to Analog input `A5` on the Arduino, and Pin `10` is connected to Analog input `A4` on the Arduino. 
+
+**TODO: Upload testing software to check if it is set up correctly**
+
+#### Software
 
 Upload the file `digipot_python_control.ino` to the arduino.
 This is the Arduino code that communicates with the digipot and sends information to the python script. The Arduino only instructs the digipot to change resistance when the python code tells it to proceed. The Arduino then changes the resistance 1 "tick" (increase of ~150 ohms) and sends the new resistance to the python script. 
 
 
-#### Using the Jupyter Notebook
+#### Using the Jupyter Notebook to Acquire Data
 
-### Analysis
+***
+
+### Data Analysis
 
 ### Troubleshooting
 **TO BE FILLED IN**
